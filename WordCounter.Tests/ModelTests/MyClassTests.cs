@@ -1,11 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter;
 
-namespace MyClass.Tests
+namespace WordCounter.Tests
 {
   [TestClass]
-  public class Something
+  public class MyClassTest
   {
-    // Test methods go here
+    [TestMethod]
+    public void isInputNotEmpty_CheckIfNotEmptyAndLegal_True()
+    {
+      MyClass newClass = new MyClass();
+      Assert.AreEqual(true, newClass.isInputNotEmptyAndLegal("I am not empty and string"));
+    }
   }
 }
