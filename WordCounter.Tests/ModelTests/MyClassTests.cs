@@ -12,5 +12,12 @@ namespace WordCounter.Tests
       MyClass newClass = new MyClass();
       Assert.AreEqual(true, newClass.isInputNotEmptyAndLegal("I am not empty and string"));
     }
+
+    [TestMethod]
+    public void RepeatCounter_CheckIfMatchNotFound_True()
+    {
+      MyClass newClass = new MyClass();
+      Assert.AreEqual(0, newClass.RepeatCounter("I like sushi", "shoe"));
+    }
   }
 }
