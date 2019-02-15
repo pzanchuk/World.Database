@@ -13,11 +13,11 @@ _This program gathers both a word and sentence from a user, then checks how freq
 * _Program will not accept empty field._
   * _Example input: (just click Enter)_
   * _Example output: "It's not a sentence"_
-  _Since this is the simplest thing you can do being a user, I've decided to put this one first._
+    * _Since this is the simplest thing you can do being a user, I've decided to put this one first._
 
 * _Program will report back if there is no such word in a sentence._
   * _Example input: word: "cat", sentence: "Looking for word cat"_
-  * _Example output: "There is no such word in a sentence"_
+  * _Example output: "Word cat has been seen here 0 times"_
 
 * _Program will report back amount of matched words in a sentence._
   * _Example input: word: "dog", sentence: "I love my dog and any other dog"_

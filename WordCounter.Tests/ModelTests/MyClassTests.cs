@@ -7,10 +7,10 @@ namespace WordCounter.Tests
   public class MyClassTest
   {
     [TestMethod]
-    public void isInputNotEmpty_CheckIfNotEmptyAndLegal_True()
+    public void IsInputNotEmpty_CheckIfInputNotEmpty_True()
     {
       MyClass newClass = new MyClass();
-      Assert.AreEqual(true, newClass.isInputNotEmptyAndLegal("I am not empty and string"));
+      Assert.AreEqual(true, newClass.IsInputNotEmpty("I am not empty and strin"));
     }
 
     [TestMethod]
