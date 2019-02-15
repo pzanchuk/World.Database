@@ -11,9 +11,9 @@ namespace WordCounter
       return counter;
     }
 
-    public bool IsInputNotEmptyAndLegal (string userInput)
+    public bool IsInputNotEmpty(string userInput)
     {
-      if(String.IsNullOrEmpty(userInput) || userInput.GetType() != typeof(String))
+      if(String.IsNullOrEmpty(userInput))
       {
         return false ;
       }
@@ -29,7 +29,7 @@ namespace WordCounter
       sentenceToArray = userInputSentense.Split(' ');
       foreach(string element in sentenceToArray)
       {
-        if(element.Trim(',','.','?','!').ToUpper() == userInputWord.ToUpper())
+        if(element.Trim(',','.','?','!','(').ToUpper() == userInputWord.ToUpper())
         {
           counter++;
         }
