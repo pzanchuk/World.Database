@@ -47,5 +47,13 @@ namespace WordCounter.Tests
       MyClass newClass = new MyClass();
       Assert.AreEqual(3, newClass.RepeatCounter("Some flowers smell like ,some? grosserie in .some! store.", "Some"));
     }
+
+    [TestMethod]
+    public void GetCounter_CheckIfResulInt_True()
+    {
+      MyClass newClass = new MyClass();
+      newClass.RepeatCounter("Result is equalse to one + one + one + one + one.", "one");
+      Assert.AreEqual(5, newClass.GetCounter());
+    }
   }
 }

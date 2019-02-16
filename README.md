@@ -13,24 +13,27 @@ _This program gathers both a word and sentence from a user, then checks how freq
 * _Program will not accept empty field._
   * _Example input: (just click Enter)_
   * _Example output: "It's not a sentence"_
-    * _(Since this is the simplest thing you can do being a user, I've decided to put this one first.)_
-
-* _Program will report back if there is no such word in a sentence._
-  * _Example input: word: "cat", sentence: "Looking for word cat"_
-  * _Example output: "Word cat has been seen here 0 times"_
-    * _._
-
-* _Program will report back amount of matched words in a sentence._
-  * _Example input: word: "dog", sentence: "I love my dog and any other dog"_
-  * _Example output: 2_
+    * _(Since this is the simplest thing you can do being a user, or implement being a dev. I've decided to put this one first. Also, it will save time for both user and PC by preventing unusable inputs)_
 
 * _Program will store user's input as a String type._
   * _Example input: "Hello there, I am a string"._
-  * _Example output: "True" (Test will show that the type of user's input is correct type for the program.)_
+  * _Example output: "True" (Test will show that the type of user's input is correct type, which is string.)_
+    * _(This spec comes in second, because before wasting time running the whole project I need to make sure I will be working with correct data types.)_
+
+* _Program will report back amount of matched words in a sentence._
+  * _Example input: word: "dog", sentence: "I love my dog and any other dog"_
+  * _Example output: Word [dog] has been seen here 2 time/s_
+    * _(Looks like this one is the most logical thing to use this program for, so it comes right after crucial specs .)_
+
+* _Program will report back if there is no such word in a sentence._
+  * _Example input: word: "cat", sentence: "Looking for word cat"_
+  * _Example output: "Word [cat] has been seen here 0 time/s"_
+    * _Current spec is a second logical thing to try while using this terminal app._
 
 * _Program will return result as an Integer type._
-  * _Example input: "Hello there, I am a string"._
-  * _Example output: "True" (Test will show that the type of user's input is correct type for the program)_
+  * _Example input: word: "am", sentence: "Hello there, I am a string"._
+  * _Example output: "Pass"_
+    * _This spec is just for testing PURPOSE._
 
 
 ## Setup/Installation Requirements
@@ -39,7 +42,7 @@ _This program gathers both a word and sentence from a user, then checks how freq
 * _To download the repository choose "Open in Desktop" or "Download Zip"._
 * _Alternatively, to clone the repository, type "git clone https://github.com/pzanchuk/WordCounter.Solution in the terminal". (Note!: git should be installed on your PC).  For more    information visit GitHub Help section Cloning a repository from GitHub:
 https://help.github.com/articles/cloning-a-repository-from-github/_
-* _To run the project, in the terminal navigate to ../WordCounter.Splution/WordCounter and ran these lines: mcs Program.cs Models/MyClass.cs; mono Program.exe.(Note!: ####Mono#### and ####.NET Core SDK 1.1.4#### must be installed on your machine"._
+* _To run the project, in the terminal navigate to ../WordCounter.Solution/WordCounter and ran these lines: mcs Program.cs Models/MyClass.cs; mono Program.exe.(Note!: ####Mono#### and ####.NET Core SDK 1.1.4#### must be installed on your machine"._
 
 
 ## Support and contact details
