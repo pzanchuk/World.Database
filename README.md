@@ -42,7 +42,7 @@ _This program gathers both a word and sentence from a user, then checks how freq
 * _To download the repository choose "Open in Desktop" or "Download Zip"._
 * _Alternatively, to clone the repository, type "git clone https://github.com/pzanchuk/WordCounter.Solution in the terminal". (Note!: git should be installed on your PC).  For more    information visit GitHub Help section Cloning a repository from GitHub:
 https://help.github.com/articles/cloning-a-repository-from-github/_
-* _To run the project, in the terminal navigate to ../WordCounter.Solution/WordCounter and ran these lines: mcs Program.cs Models/MyClass.cs; mono Program.exe.(Note!: ####Mono#### and ####.NET Core SDK 1.1.4#### must be installed on your machine"._
+* _To run the project, in the terminal navigate to ../WordCounter.Solution/WordCounter and ran these lines: mcs Program.cs Models/MyClass.cs; mono Program.exe.(Note!: Mono and .NET Core SDK 1.1.4 must be installed on your machine"._
 
 
 ## Support and contact details
