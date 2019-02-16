@@ -13,11 +13,12 @@ _This program gathers both a word and sentence from a user, then checks how freq
 * _Program will not accept empty field._
   * _Example input: (just click Enter)_
   * _Example output: "It's not a sentence"_
-    * _Since this is the simplest thing you can do being a user, I've decided to put this one first._
+    * _(Since this is the simplest thing you can do being a user, I've decided to put this one first.)_
 
 * _Program will report back if there is no such word in a sentence._
   * _Example input: word: "cat", sentence: "Looking for word cat"_
   * _Example output: "Word cat has been seen here 0 times"_
+    * _._
 
 * _Program will report back amount of matched words in a sentence._
   * _Example input: word: "dog", sentence: "I love my dog and any other dog"_
@@ -33,17 +34,18 @@ _This program gathers both a word and sentence from a user, then checks how freq
 
 
 ## Setup/Installation Requirements
-* _Navigate your web browser to https://github.com/pzanchuk/WordCounter
+* _Navigate your web browser to https://github.com/pzanchuk/WordCounter.Solution_
 * _Click the green button "Clone or download" on the repository page._
 * _To download the repository choose "Open in Desktop" or "Download Zip"._
-* _Alternatively, to clone the repository, type "git clone https://github.com/pzanchuk/WordCounter in the terminal" (note: git should be installed on your PC).  For more information visit GitHub Help section Cloning a repository from GitHub:
+* _Alternatively, to clone the repository, type "git clone https://github.com/pzanchuk/WordCounter.Solution in the terminal". (Note!: git should be installed on your PC).  For more    information visit GitHub Help section Cloning a repository from GitHub:
 https://help.github.com/articles/cloning-a-repository-from-github/_
-* _._
+* _To run the project, in the terminal navigate to ../WordCounter.Splution/WordCounter and ran these lines: mcs Program.cs Models/MyClass.cs; mono Program.exe.(Note!: ####Mono#### and ####.NET Core SDK 1.1.4#### must be installed on your machine"._
+
 
 ## Support and contact details
 
 _For support please contact:_
- _Pavel Zanchuk - buzzik@yahoo.com_
+_Pavel Zanchuk - buzzik@yahoo.com_
 
 ## Technologies Used
 

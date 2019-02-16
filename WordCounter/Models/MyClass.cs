@@ -8,12 +8,17 @@ namespace WordCounter
 
     public int GetCounter()
     {
-      return counter;
+      if (counter.GetType() == typeof(int) ) {
+        return counter;
+      }else
+      {
+        return 0;
+      }
     }
 
     public bool IsInputNotEmpty(string userInput)
     {
-      if(String.IsNullOrEmpty(userInput))
+      if(String.IsNullOrEmpty(userInput) || userInput.GetType() != typeof(string))
       {
         return false ;
       }
@@ -29,7 +34,7 @@ namespace WordCounter
       sentenceToArray = userInputSentense.Split(' ');
       foreach(string element in sentenceToArray)
       {
-        if(element.Trim(',','.','?','!','(').ToUpper() == userInputWord.ToUpper())
+        if(element.Trim(',','.','?','!').ToUpper() == userInputWord.ToUpper())
         {
           counter++;
         }
@@ -39,6 +44,5 @@ namespace WordCounter
       }
       return counter;
     }
-
   }
 }
