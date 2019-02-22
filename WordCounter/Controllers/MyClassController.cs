@@ -7,12 +7,20 @@ namespace WordCounter.Controllers
   public class MyClassController : Controller
   {
 
-    [HttpGet("/newgame")]
+    [HttpGet("/new")]
     public ActionResult New()
     {
       return View();
     }
 
+    [HttpPost("/result")]
+    public ActionResult Result(string sentence, string word)
+    {
+      MyClass newClass = new MyClass();
 
+      newClass.RepeatCounter(sentence, word);
+
+      return View(newClass);
+    }
   }
 }

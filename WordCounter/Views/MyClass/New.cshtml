@@ -5,15 +5,13 @@
     <title>Word Counter Game!</title>
   </head>
   <body>
-    <h1>To Do List</h1>
-
-    <form action="/items" method="post">
-      <label for="sentence">Please enter a sentence</label>
-      <input id="sentence" name="sentence" type="text">
-      <label for="word">Please enter a word</label>
-      <input id="word" name="word" type="text">
-      <button type="submit">Submit</button>
-    </form>
-
+    <h1>Word Counter!</h1>
+      <form action="/result" method="post">
+        <label for="sentence">Please enter a sentence</label>
+        <input id="sentence" name="sentence" type="text" required>
+        <label for="word">Please enter a word</label>
+        <input id="word" name="word" type="text" required>
+        <button type="submit">Submit</button>
+      </form>
   </body>
 </html>
