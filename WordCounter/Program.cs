@@ -1,37 +1,21 @@
-using System;
+
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace WordCounter
 {
   public class Program
   {
-    public static void Main()
+    public static void Main(string[] args)
     {
-      MyClass newClass = new MyClass();
+      var host = new WebHostBuilder()
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration()
+        .UseStartup<Startup>()
+        .Build();
 
-      Console.WriteLine("========================================");
-      Console.WriteLine("======== Welcome to WordCounter ========");
-      Console.WriteLine("========================================");
-
-      Console.Write("Please enter a sentence: ");
-      string userInputSentense = Console.ReadLine();
-
-      if(newClass.IsInputNotEmpty(userInputSentense) == true){
-
-        Console.Write("Please enter a word you would like to count: ");
-        string userInputWord = Console.ReadLine();
-        newClass.RepeatCounter(userInputSentense, userInputWord);
-        Console.WriteLine("Word [" + userInputWord + "] has been seen here " + newClass.GetCounter() + " time/s.");
-        Console.Write("Try one more sentence and word? [Y/N]: ");
-        string yesOrNo = Console.ReadLine();
-        if(yesOrNo.ToUpper() == "Y")
-        {
-          Main();
-        }
-      }else
-      {
-        Console.WriteLine("Your sentence is empty, please try again");
-        Main();
-      }
+      host.Run();
     }
   }
 }
