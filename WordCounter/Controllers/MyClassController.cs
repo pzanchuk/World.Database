@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WordCounter.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WordCounter.Controllers
 {
@@ -17,10 +18,9 @@ namespace WordCounter.Controllers
     public ActionResult Result(string sentence, string word)
     {
       MyClass newClass = new MyClass();
-
       newClass.RepeatCounter(sentence, word);
-
-      return View(newClass);
+      List<object> myList = new List<object> {newClass, sentence, word};
+      return View(myList);
     }
   }
 }
