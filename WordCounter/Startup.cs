@@ -25,6 +25,7 @@ namespace WordCounter
 
     public void Configure(IApplicationBuilder app)
     {
+      app.UseDeveloperExceptionPage();
       app.UseMvc(routes =>
       {
         app.UseDeveloperExceptionPage();

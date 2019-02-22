@@ -1,6 +1,6 @@
 using System;
 
-namespace WordCounter
+namespace WordCounter.Models
 {
   public class MyClass
   {
@@ -27,7 +27,7 @@ namespace WordCounter
         return true;
       }
     }
-    
+
     public int RepeatCounter(string userInputSentense, string userInputWord)
     {
       string[] sentenceToArray = new string[]{" "};
