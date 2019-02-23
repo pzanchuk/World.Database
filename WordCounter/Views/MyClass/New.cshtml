@@ -2,13 +2,15 @@
   Layout = "_Layout";
 }
 
-<dive class = "container">
+<div class = "form">
   <h1>Word Counter!</h1>
   <form action="/result" method="post">
     <label for="sentence">Please enter a sentence</label>
     <input id="sentence" name="sentence" type="text" required>
+    <br>
     <label for="word">Please enter a word</label>
     <input id="word" name="word" type="text" required>
-    <button type="submit">Submit</button>
+    <br>
+    <button type="submit" class="btn btn-warning">Submit</button>
   </form>
 </div>

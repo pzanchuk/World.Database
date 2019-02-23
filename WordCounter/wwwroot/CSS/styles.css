@@ -1,7 +1,12 @@
-h1{
-  color: red;
-}
-
 .container{
   width: 50%;
+  text-align: center;
+}
+
+.form{
+  text-align: left;
+}
+
+#word{
+  color: blue;
 }
