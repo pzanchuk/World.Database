@@ -26,6 +26,7 @@ namespace WordCounter
     public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
+      app.UseStaticFiles();
       app.UseMvc(routes =>
       {
         app.UseDeveloperExceptionPage();
@@ -38,7 +39,6 @@ namespace WordCounter
         {
           await context.Response.WriteAsync("Ooops! Something went wrong!");
         });
-
     }
   }
 }
