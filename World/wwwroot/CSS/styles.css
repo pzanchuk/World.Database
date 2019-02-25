@@ -1,0 +1,13 @@
+.container{
+  padding-top: 10%;
+  width: 50%;
+  text-align: center;
+}
+
+.form{
+  text-align: left;
+}
+
+#word{
+  color: blue;
+}

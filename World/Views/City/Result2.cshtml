@@ -1,0 +1,24 @@
+@using World.Models;
+
+@{
+  Layout = "_Layout";
+}
+
+<h1>I am city table</h1>
+
+@if(Model.Count == 0)
+{
+  <p>There are no cities under such name</p>
+}
+
+@if(Model.Count !=0)
+{
+  @foreach(City city in Model)
+    {
+      <p>@city.getName(), @city.getPopulation()</p>
+    }
+
+}
+
+
+<h3><a href='/search'>Search again!<a/></h3>
